@@ -4,7 +4,7 @@ UC do 3º Ano de Engenharia Informática na Universidade do Minho
 
 # Aluno
 
-**Nome:** Carlos Diogo Fernaandes Pina
+**Nome:** Carlos Diogo Fernandes Pina
 
 **Número:** A95349
 
