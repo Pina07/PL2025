@@ -1,6 +1,6 @@
 # PL2025
 
-UC do 3º Ano de Engenharia Informática na Universidade do Minho
+UC  de Processamento de Linguagens do 3º Ano de Engenharia Informática na Universidade do Minho
 
 # Aluno
 
@@ -8,6 +8,4 @@ UC do 3º Ano de Engenharia Informática na Universidade do Minho
 
 **Número:** A95349
 
-**Email:** a95349@alunos.uminho.pt
 
- 1. TPCs
