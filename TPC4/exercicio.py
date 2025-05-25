@@ -61,7 +61,7 @@ lexer = lex()
 
 def main():
     if len(sys.argv) != 2:
-        print("Uso: python lexer.py nome_ficheiro")
+        print("Uso: python exercicio.py nome_ficheiro")
         return
     
     filename = sys.argv[1]

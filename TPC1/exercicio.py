@@ -14,8 +14,11 @@ def extrair_numeros(token):
         nums.append(int(atual))
     return nums
 
+
+
 soma_ligada = True
 soma_total = 0
+ultimo_foi_igual = False
 
 for linha in sys.stdin:
     tokens = linha.split()
@@ -47,19 +50,27 @@ for linha in sys.stdin:
                     print(">>", soma_total)
                     eco = []
                     reconstruido = ""
+                    ultimo_foi_igual = True
             if reconstruido:
                 if reconstruido.lower() == "on":
                     soma_ligada = True
                 elif reconstruido.lower() == "off":
                     soma_ligada = False
                 eco.append(reconstruido)
+                ultimo_foi_igual = False
         else:
             if soma_ligada:
                 nums = extrair_numeros(token)
                 if nums:
                     soma_total += sum(nums)
             eco.append(token)
+            ultimo_foi_igual = False
     if eco:
         print(" ".join(eco))
+        if "=" in " ".join(eco):
+            print(">>", soma_total)
+            ultimo_foi_igual = True
 
-print(">>", soma_total)
+# Garante que imprime no fim, se não foi impresso na última linha
+if not ultimo_foi_igual:
+    print(">>", soma_total)
